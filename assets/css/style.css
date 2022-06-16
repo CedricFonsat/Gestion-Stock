@@ -1,0 +1,19 @@
+body{
+    background-color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    width: 100%;
+    text-align: center;
+}
+div{
+    margin: 10px;
+}
+input{
+    width: 200px;
+    height: 30px;
+}
+#buttonRemoveStock{
+    width: 200px;
+    height: 30px;
+}

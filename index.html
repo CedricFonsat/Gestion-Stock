@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Stoky</title>
+</head>
+<body>
+    <section>
+        <h1>ETAT DES STOCKS</h1>
+        <article id="displayStock"><p id="super"></p></article>
+        <form id="removeStock">
+            <div>
+                <label for="iphoneRemoveStock">iPhone</label>
+                <input id="iphoneRemoveStock" name="iphoneRemoveStock" type="number">
+            </div>
+            <div>
+                <label for="macbookRemoveStock">MacBook</label>
+                <input id="macbookRemoveStock" name="macbookRemoveStock" type="number">
+            </div>
+            <div>
+                <label for="ipadRemoveStock">iPad</label>
+                <input id="ipadRemoveStock" name="ipadRemoveStock" type="number">
+            </div>
+            <button id="buttonRemoveStock" type="button" onclick="updateRemove()">Valider</button>
+        </form>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
