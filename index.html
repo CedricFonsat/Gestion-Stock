@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Stoky</title>
 </head>
+
 <body>
     <section>
+        <img src="assets/images/logo.png" alt="" srcset="">
         <h1>ETAT DES STOCKS</h1>
-        <article id="displayStock"><p id="super"></p></article>
-        <form id="removeStock">
-            <div>
-                <label for="iphoneRemoveStock">iPhone</label>
-                <input id="iphoneRemoveStock" name="iphoneRemoveStock" type="number">
+        <article id="displayStock">
+            <div id="stop">
+                <p>STOP VOUS N'AVEZ PLUS DE STOCKS &ensp; </p><span class="material-symbols-outlined">
+                    block
+                </span>
             </div>
-            <div>
-                <label for="macbookRemoveStock">MacBook</label>
-                <input id="macbookRemoveStock" name="macbookRemoveStock" type="number">
-            </div>
-            <div>
-                <label for="ipadRemoveStock">iPad</label>
-                <input id="ipadRemoveStock" name="ipadRemoveStock" type="number">
-            </div>
-            <button id="buttonRemoveStock" type="button" onclick="updateRemove()">Valider</button>
-        </form>
+            <table>
+                <tr class="headTable">
+                    <td>Stock iPhone</td>
+                    <td>Stock iPad</td>
+                    <td>Stock Macbook</td>
+                </tr>
+                <tr>
+                    <td id="iphoneStock"></td>
+                    <td id="ipadStock"></td>
+                    <td id="macbookStock"></td>
+                </tr>
+            </table>
+        </article>
+        <article id="removeStock">
+            <form name="form">
+                <div class="product">
+                    <label for="iphoneRemoveStock">iPhone</label>
+                    <input id="iphoneRemoveStock" placeholder="Entrer votre commande" name="iphoneRemoveStock"
+                        type="number">
+                </div>
+                <div class="product">
+                    <label for="ipadRemoveStock">iPad</label>
+                    <input id="ipadRemoveStock" placeholder="Entrer votre commande" name="ipadRemoveStock"
+                        type="number">
+                </div>
+                <div class="product">
+                    <label for="macbookRemoveStock">MacBook</label>
+                    <input id="macbookRemoveStock" placeholder="Entrer votre commande" name="macbookRemoveStock"
+                        type="number">
+                </div>
+                <button id="buttonRemoveStock" type="button" onclick="updateRemove()">Commander
+                </button>
+            </form>
+        </article>
     </section>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
